@@ -1,0 +1,1 @@
+This is a flask app that scrapes wikipedia for every war with over 25,000 casualties and then uses pandas to put them into a dataframe and then makes a website that displays basic information about the war.
