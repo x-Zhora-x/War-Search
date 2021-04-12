@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+  <title>Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: #555;
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+.content a{
+  text-decoration: none;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+<title>Search</title>
+<div class="content">
+  <h1>.War Search.</h1>
+  <form action="" method = "POST">
+    <label for="fname">Search For War:</label><br>
+    <input type="text" name="fname"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  <br>
+  {% for item in daList %}
+  <a href="wars/{{item}}">{{ item }}</a><br>
+  {% endfor %}
+  
+</div>
+
+</body>
+</html>
